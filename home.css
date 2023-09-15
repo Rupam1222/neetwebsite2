@@ -1,0 +1,306 @@
+body{
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* Page Content */
+
+.first-content{
+  background: linear-gradient(rgb(23, 219, 131), rgb(2, 179, 243));
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}.first-content-heading h1{
+  font-family:'Times New Roman', Times, serif;
+  color: rgb(18, 87, 119);
+  font-size: 50px;
+}
+.first-content-heading p{
+  font-size: 22px;
+  color:green;
+}
+.first-content-heading button{
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 20px;
+  background-color: rgb(18, 87, 119);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.first-content-heading button:hover{
+  background-color: rgb(18, 87, 119,0.7);
+}
+.first-content div img{
+  height: 500px;
+  background: transparent;
+}
+.pholio{
+  display:block;
+  margin: 100px ;
+}
+.pholio .examSection{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width:100%;
+  flex-grow: 1;
+  background-color:darkseagreen;
+  margin-top: 5px;
+}
+.examSection .examImage img{
+  height: 350px;
+  width: 350px;
+}
+
+.examSection .examImage img:hover{
+  transform:scale(1.01);
+  box-shadow: 0 20px 50px gray;
+}
+.examContent{
+  height: 350px;
+}
+.examContent div{
+  display: block;
+  padding: 20px 0 10px 10px;
+}
+
+.examContent div h1{
+  font-size: xx-large;
+}
+.examContent div p{
+  font-size: 20px;
+  text-align: justify;
+  padding: 10px;
+}
+.examContent div button{
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: rgb(59, 78, 81);
+}
+.examContent div button a{
+  text-decoration: none;
+  color: white;
+}
+.examContent div button:hover{
+  background-color: rgb(58, 127, 111);
+}
+
+
+
+/*Image  Slider  */
+
+
+#wrap {
+	margin-top: 10px;
+	width: 100%;
+	min-width: 800px;
+	height: 500px;
+	max-height: 500px;
+}
+#slider-holder {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  height: 500%;
+  max-height: 500px;
+  overflow: hidden;
+  
+}
+
+#slider-holder .slide {
+  display: none;
+  position: absolute;
+  float: left;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+.slide img {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  max-width: 800px;
+  height: 100%;
+  max-height: 1000px;
+
+}
+
+#slider-holder #btn-nav-holder {
+  z-index: -1;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+/*  View Port */
+
+@media (max-width: 1165px) {
+#wrap {
+  width: 100%;
+	min-width: 350px;
+	height: 300px;
+	max-height: 300px;
+}
+#slider-holder {
+  width: 600px;
+  max-width: 1000px;
+  height: 100%;
+  max-height: 300px;
+}
+.examSection div{
+  text-align: center;
+  align-items: center;
+}
+.examSection .examImage img{
+  height: 280px;
+  width: 280px;
+}
+.examContent div h1{
+  font-size: 20px;
+}
+.examContent div p{
+  font-size: 15px;
+}
+.examContent div button{
+  padding: 5px;
+  font-size: 12px;
+}
+
+.pholio{
+  margin: 80px 80px 80px 80px;
+}
+.examSection .examImage img{
+  height: 250px;
+  width: 250px;
+}
+.examContent{
+  height: 250px;
+}
+.examContent div{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 10px 0 5px 5px;
+}
+
+.examContent div h1{
+  font-size: 20px;
+}
+.examContent div p{
+  font-size: 13px;
+  padding: 6px;
+}
+.examContent div button{
+  padding: 5px;
+  font-size: 10px;
+  border: none;
+  background-color: rgb(59, 78, 81);
+}
+.examContent div button a{
+  text-decoration: none;
+  color: white;
+}  
+}
+
+@media (max-width:600px) {
+
+#wrap {
+	display: none;
+}
+.pholio{
+  display:block;
+  margin: 40px;
+}
+.examSection{
+  margin: 5px;
+}
+.examSection section{
+  display: block;
+}
+.examSection .examImage img{
+  height: 100px;
+  width: 100px;
+}
+.examContent{
+  height: 100px;
+}
+.examContent div{
+  padding: 5px 0 5px 5px;
+}
+.examContent div h1{
+  font-size: 8px;
+}
+.examContent div p{
+  font-size: 5px;
+  padding: 2px;
+}
+.examContent div button{
+  padding: 2px;
+  font-size: 4px;
+}  
+}
+
+.contact-form{
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.contact-form .contact-content{
+  background-color:white;
+  display: grid;
+  border-radius: 10px;
+}
+.contact-form div h1{
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+}
+.contact-form div h2{
+  color: gray;
+  font-weight: 100;
+  padding: 10px;
+  margin-left: 10px;
+}
+.contact-form div input{
+  height: 40px;
+  width: 80%;
+  margin-left: 40px;
+  padding: 10px;
+  font-weight: lighter;
+  border: none;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+}
+.contact-content button{
+  font-size: 18px;
+  padding: 10px;
+  width: 90px;
+  margin: 10px 40%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(74, 77, 77);
+  color: white;
+}
+.contact-content button:hover{
+  background-color: gray;
+}
+.contact-content div textarea{
+  margin-left: 40px;
+  background-color: rgb(230, 230, 230);
+  font-weight: lighter;
+  padding: 10px;
+  width: 80%;
+  height: 80px;
+  border-radius: 5px;
+  border: none;
+}
+

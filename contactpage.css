@@ -1,0 +1,57 @@
+.contactform {
+    width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 20px 20px 30px gray;
+}
+.contactform div{
+    margin: 20px;
+}
+.contactform div h1{
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+}
+.contactform div h3{
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: muli;
+    font-style: normal;
+}
+.contactform div input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: gainsboro;
+    font-size: 15px;
+}
+.contactform div textarea{
+    width: 100%;
+    height: 70px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: gainsboro;
+    border: none;
+}
+.contactform div button{
+    width: 100%;
+    padding: 10px;
+    margin: 15px auto;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(65, 62, 62);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.contactform div button:hover{
+    background-color: rgb(65, 62, 62,.9);
+}

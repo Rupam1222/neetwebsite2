@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: bisque;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.navbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(53, 52, 55);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px rgb(0,0,0,0.5);
+}
+#textLogo img{
+    height: 150px;
+    margin-left: -70px;
+}
+.navbar ul{
+    position: relative;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    letter-spacing: 0.0em;
+}
+.navbar ul li:hover{
+    background-color: rgb(29, 142, 142);
+    text-align: center;
+    border-radius: 5px;
+}
+.navbar ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: aqua;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.navbar div ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navbar ul li ul{
+    width: 180px;
+    border: 1px solid aqua;
+    background-color: rgb(53, 52, 55);
+    box-shadow: 0 15px 15px rgb(0, 0, 0, 0.5);
+    display: none;
+    text-align: center;
+    margin: 10px -23px ;
+    border-radius: 10px;
+    padding: 10px 20px;
+    z-index: 20;
+}
+.navbar ul li:hover ul{
+    position: absolute;
+    display: block;
+    background-color: rgb(53, 52, 55);
+}
+.navbar ul li:hover #down-icon{
+    transform: rotate(180deg);
+}
+.navbar ul li ul li{
+    padding-top: 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    height: 45px;
+    width: 250px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+.search-box input[type="text"]:hover{
+    background-color: rgba(228, 228, 228);
+}
+.search-box button[type="submit"] {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(29, 142, 142);
+    color:  white;
+    border-radius: 0 20px 20px 0;
+}
+.search-box button[type="submit"]:hover{
+    background-color: rgba(13, 173, 173,0.9);
+}
+
+#social-content{
+    display: flex;
+    position: absolute;
+    margin-left: 209vh;
+    z-index: 20;
+}
+
+#social{
+    width: 100%;
+}
+#social a{
+    display:block;
+    text-align: start;
+    background-color: aqua;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+#social a span{
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 30px;
+}
+#social a h5{
+    display: none;
+}
+#social a:hover{
+    margin-left: -120px;
+}
+#social a:hover h5{
+    display: inline-block;
+}
+
+#social a:nth-child(1){
+    color: blue;
+}
+#social a:nth-child(2){
+    color: rgb(117, 30, 59);
+}
+#social a:nth-child(3){
+    color: red;
+}
+
+.menuToggle{
+    position: relative;
+    display: none;
+}
+
+.active{
+    background-color: rgb(29, 142, 142);
+    text-align: center;
+    border-radius: 5px;
+}
+.active a{
+    padding: ;
+}
+
+.footerSection{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(53, 52, 55,0.8);
+    align-items: center;
+    color: white;
+    padding: 0 40px 0 40px;    
+}
+.footerSection div #textLogo img{
+    height: 180px;
+}
+
+.footerSection #footerExamList ul {
+    letter-spacing: 0.05em;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.footerSection #footerExamList ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footerSection #footerExamList ul li a:hover{
+    color: rgb(25, 152, 152);
+}
+    
+.footerSection .footerContact{
+    display: block;
+}
+.footerContact #location{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.footerContact div{
+    line-height: 50px;
+}
+    
+    footerContact hr{
+    height: 1px;
+    min-height: 1px;
+}
+    #location ion-icon{
+    font-size: 20px;
+}
+.footerContact .social-foot{
+    font-size: 35px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1em;
+    cursor: pointer;
+}
+.footerContact #about{
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;justify-content: center;
+    gap: 10px;
+}
+.footerContact #about a{
+    color: white;
+}
+    #about a:hover{
+    color:rgb(29, 142, 142);
+}
+.social-foot #facebook:hover{
+    color: blue;
+    transform: rotate(360deg);
+    transition-duration: 0.8s;
+}
+.social-foot #instagram:hover{
+    color: rgb(148, 113, 156);
+    transform: rotate(360deg);
+    transition-duration: 0.8s;
+}
+.social-foot #youtube:hover{
+    color: red;
+    transform: rotate(360deg);
+    transition-duration: 0.8s;
+}
+    
+
+@media (max-width: 1165px) {
+    .menuToggle{
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 10;
+    transform: translateX(20px);
+    margin-left: 30px;
+}
+#textLogo{
+    font-size: 10px;
+    margin-left: 10px;
+}
+#textLogo img{
+    height: 130px;
+    width: 130px;
+}
+.footerSection div #textLogo{
+    margin-left: 0px;
+    font-size: 15px;
+    letter-spacing: .01em;
+    padding: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:rgb(16, 167, 159);
+    font-family: monospace;
+    opacity: 1;
+}
+
+.navbar{
+    height: 40px;
+    background-color: rgb(53, 52, 55);
+    margin-left: 0;
+    padding: 35px;
+}
+    .navbar div img{
+    height: 50px;
+    width: 50px;
+}
+
+.navbar #allMenu{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar .search-box input{
+    height: 25px;
+    width: 160px;
+    font-size: 10px;
+}
+    .navbar .search-box button{
+    height: 25px;
+    width: 25px;
+    margin-left: -22px;
+    font-size: 10px;
+}
+
+.navbar.open #allMenu{
+    top: 40px;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    display: block;
+    flex-direction: column;
+    width: 30%;
+    height: 350%;
+    border-top: 1px solid aqua;
+    box-shadow: 0 15px 20px rgb(0, 0, 0, 0.5);
+    border-radius: 0 20px 20px 20px;
+    padding: 0 20px;
+    z-index: 20;
+    font-size: 10px;
+    background-color: rgb(53, 52, 55);
+    margin-top: 30px;
+}
+.navbar #allMenu #nav-hover #down-icon {
+    transform: rotate(270deg);
+}
+.navbar #allMenu ul{
+    margin-left: 90px;
+    border-radius: 0 20px 20px 20px;
+    margin-top: -10px;
+}
+.navbar #allMenu ul li{
+    padding: 10px  0 0;
+}
+.navbar.open ul li{
+    padding-top: 15px;
+    margin-top: 3px;
+}
+.search-box input[type="text"]{
+    height: 30px;
+    width:170px;
+    font-size: 15px;
+    border-radius: 15px 0 0 15px;
+}
+.search-box button[type="submit"]{
+    height: 30px;
+    width:30px;
+    border-radius: 0 15px 15px 0;
+    font-size: 15px;
+    margin-left: 0px;
+}
+#social-content{
+    display: block;
+    margin-left: 209vh;
+}
+
+#social{
+    width: 100%;
+}
+#social a{
+    display:block;
+    width: 100px;
+}
+
+#social a span{
+    font-size: 20px;
+}
+
+#social a:hover{
+    margin-left: -60px;
+}
+#social a:hover h5{
+    font-size: 10px;
+}
+.active{
+    background-color: rgb(29, 142, 142);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.footerSection{
+    padding: 10px;
+}
+.footerSection div #textLogo{
+    color: white;
+    font-size: 10px;
+}
+.footerSection #footerExamList ul {
+    font-size: 10px;
+    line-height: 12px;
+    cursor: pointer;
+}
+    
+.footerContact #location{
+    font-size: 8px;
+}
+.footerContact div{
+    line-height: 20px;
+}
+#location ion-icon{
+    font-size: 10px;
+}
+.footerContact .social-foot{
+    font-size: 20px;
+    padding: 8px;
+}
+.footerContact #about{
+    font-size: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+}
+
+@media (max-width:600px) {
+.menuToggle{
+    font-size: 20px;
+    left: 10px;
+}
+    .navbar{
+    height: 35px;
+    width:100%;
+}
+.navbar div img{
+    height: 30px;
+    width: 30px;
+}
+.navbar.open #allMenu{
+    height: 220%;
+    width: 200px;
+    }
+    .navbar #allMenu ul{
+    width: 100px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 1px;
+    height: 40%;
+}
+.navbar #allMenu ul li{
+    padding: 1px;    
+}
+.navbar.open ul li{
+    display: block;
+    font-size: 7px;
+    padding: 6px;
+}
+
+.navbar ul li a::before{
+    height: 0.8px;
+}
+.search-box input[type="text"]{
+    height: 15px;
+    width:100px;
+    font-size: 8px;
+    border-radius: 15px 0 0 15px;
+}
+.search-box button[type="submit"]{
+    height: 15px;
+    width:15px;
+    margin-left: 0.1px;
+    position: relative;
+    border-radius: 0 15px 15px 0;
+    font-size: 5px;
+}
+.active{
+    background-color: rgb(29, 142, 142);
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+#wrap {
+    display: none;
+}
+
+#social-content{
+    display: flex;
+    position: absolute;
+    margin-left: 209vh;
+    z-index: 20;
+}
+
+#social{
+    width: 100%;
+}
+#social a{
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+#social a span{
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 10px;
+}
+#social a h5{
+    display: none;
+}
+#social a:hover{
+    margin-left: -80px;
+}
+
+.footerSection{
+    padding: 8px;
+}
+.footerSection #footer-logo{
+    height: 50px;
+}
+.footerSection #footerExamList ul {
+    font-size: 7px;
+    line-height: 8px;
+    cursor: pointer;
+}
+
+.footerContact #location{
+    font-size: 7px;
+}
+.footerContact div{
+    line-height: 10px;
+}
+#location ion-icon{
+    font-size: 8px;
+}
+.footerContact hr{
+
+}
+.footerContact .social-foot{
+    font-size: 10px;
+    padding: 5px;
+}
+.footerContact #about{
+    font-size: 8px;
+    gap: 5px;
+    justify-content: center;
+}
+}

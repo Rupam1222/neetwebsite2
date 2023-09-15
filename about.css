@@ -1,0 +1,83 @@
+.topStyle{
+    height: 88vh;
+}
+.topStyle .aboutSection{
+    background: linear-gradient(rgb(23, 219, 131), rgb(2, 179, 243));
+    height: 88vh;
+    width: 100%;
+}
+.topStyle .custom-shape-divider-bottom-1685021053{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.topStyle .custom-shape-divider-bottom-1685021053 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.topStyle .custom-shape-divider-bottom-1685021053 .shape-fill {
+    fill:bisque;
+}
+
+.topStyle .aboutSection h2{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    padding-top:50px ;
+    
+}
+.mainSocialSection a span{
+    padding-left: 5px;
+    background:transparent;
+    font-size: 2px;
+    text-align: center;
+    padding: 2px;
+}
+.mainSocialSection a:nth-child(1){
+    color: blue;
+}
+.mainSocialSection a:nth-child(2){
+    color: rgba(134, 13, 33,0.7);
+}
+.mainSocialSection a:nth-child(3){
+    color: red;
+}
+.mainSocialSection a span:hover{
+    transform:scale(1.1);
+    box-shadow: 0 10px 15px black;
+}
+.topic{
+    height: 300px;
+    width: 400px;
+}
+
+.aboutcontent{
+    display: block;
+    margin: 100px;
+    background-color: ;
+}
+.aboutcontent div{
+    display: flex;
+}
+.aboutcontent div div{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.aboutcontent div div #mainHeading{
+    padding: 50px;
+    margin-top: -90px;
+    background-color:rgb(55, 145, 140);
+    width: 
+}
+.aboutcontent div div p{
+    padding: 30px;
+    text-align: justify;
+}
